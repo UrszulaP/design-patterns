@@ -8,9 +8,7 @@ public class LunchOrder {
 		private String dressing;
 		private String meat;
 		
-		public Builder() {
-			
-		}
+		public Builder() { }
 		
 		public LunchOrder build() {
 			return new LunchOrder(this);
@@ -34,8 +32,7 @@ public class LunchOrder {
 		public Builder meat(String meat) {
 			this.meat = meat;
 			return this;
-		} 
-		
+		}
 	}
 	
 	private final String bread;
@@ -67,7 +64,3 @@ public class LunchOrder {
 	}
 	
 }
-
-// 3 metoda - wzorzec builder
-// jest lepsza od bean, bo można ustawiać metody set w łańcuchu
-// jest niemutowalna po stworzeniu - nie da się edytować pól

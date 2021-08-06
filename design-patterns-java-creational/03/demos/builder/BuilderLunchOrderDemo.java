@@ -16,3 +16,7 @@ public class BuilderLunchOrderDemo {
 		System.out.println(lunchOrder.getMeat());	
 	}
 }
+
+// 3 metoda - wzorzec builder
+// jest lepsza od bean, bo można ustawiać metody set w łańcuchu
+// jest niemutowalna po stworzeniu - nie da się edytować pól

@@ -42,7 +42,3 @@ public class LunchOrderTele {
 		return meat;
 	}
 }
-
-// 1 podejście do tworzenia obiektów z dowolnymi argumentami.
-// Ta metoda pozwala na tworzenie obiektów z ograniczonymi kombinacjami argumentów. Niemożliwe jst np stworzenie
-// z samymi condiments i dressing.

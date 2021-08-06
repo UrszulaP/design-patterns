@@ -37,6 +37,3 @@ public class LunchOrderBean {
 	}
 	
 }
-
-// 2 metoda
-// Tutaj tworzy się obiekt bez arg i wszystkie trzeba ustawiać .set... w oddzielnych linijkach, nie można zrobić łańcucha
