@@ -1,4 +1,4 @@
-package com.pluralsight.bridge;
+package bridge;
 
 public class Movie {
 
@@ -10,6 +10,7 @@ public class Movie {
 	public String getClassification() {
 		return classification;
 	}
+
 	public String getRuntime() {
 		return runtime;
 	}

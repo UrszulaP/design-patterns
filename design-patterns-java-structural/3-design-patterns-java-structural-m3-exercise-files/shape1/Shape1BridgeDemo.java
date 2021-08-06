@@ -1,4 +1,4 @@
-package com.pluralsight.bridge.shape1;
+package shape1;
 
 public class Shape1BridgeDemo {
 
@@ -16,3 +16,6 @@ public class Shape1BridgeDemo {
 	}
 
 }
+
+// problem z dodawaniem kolejnych kształtów+kolorów, dużo się tego robi
+// dodanie nowego koloru/kształtu wymaga dodania klas dla wszystkich (kształt * kolor)

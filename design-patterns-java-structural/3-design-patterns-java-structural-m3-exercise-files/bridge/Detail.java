@@ -1,4 +1,4 @@
-package com.pluralsight.bridge;
+package bridge;
 
 public class Detail {
 	private String label;

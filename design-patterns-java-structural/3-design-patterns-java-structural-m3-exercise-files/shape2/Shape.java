@@ -1,6 +1,6 @@
-package com.pluralsight.bridge.shape2;
+package shape2;
 
-public abstract class Shape {
+public abstract class Shape {  // abstract class, nie interface, żeby zdefiniować konstruktor
 
 	protected Color color;
 	

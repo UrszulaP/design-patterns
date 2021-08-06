@@ -1,4 +1,4 @@
-package com.pluralsight.bridge.shape2;
+package shape2;
 
 public class Blue implements Color {
 

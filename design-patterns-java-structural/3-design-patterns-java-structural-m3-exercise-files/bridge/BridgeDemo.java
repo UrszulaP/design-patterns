@@ -1,4 +1,4 @@
-package com.pluralsight.bridge;
+package bridge;
 
 public class BridgeDemo {
 
@@ -13,14 +13,28 @@ public class BridgeDemo {
 		Printer moviePrinter = new MoviePrinter(movie);
 		
 		String printedMaterial = moviePrinter.print(printFormatter);
-		
 		System.out.println(printedMaterial);
 		
 		Formatter htmlFormatter = new HtmlFormatter();
 		
 		String htmlMaterial = moviePrinter.print(htmlFormatter);
-		
 		System.out.println(htmlMaterial);
 	}
 
 }
+
+// builder - robi to (Printer) w taki sposób (Formatter)
+// Printer i Formatter są niezależne od siebie, nie wiedzą nic o sobie nawzajem - decoupled
+
+//▪ Decouple Abstraction and implementation
+//▪ Encapsulation, Composition, Inheritance
+//▪ Changes in Abstraction won’t affect client
+//▪ Details won’t be right
+//▪ Examples:
+//	▪ Driver
+//	▪ JDBC
+
+//▪ Designed upfront
+//▪ Abstraction and implementation vary
+//▪ Built in advance
+//▪ Complex

@@ -1,4 +1,4 @@
-package com.pluralsight.bridge.shape1;
+package shape1;
 
 public class GreenSquare extends Square {
 
