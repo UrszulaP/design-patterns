@@ -1,4 +1,4 @@
-package com.pluralsight.facade;
+package facade;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -11,6 +11,8 @@ public class JdbcDemo {
 		DbSingleton instance = DbSingleton.getInstance();
 		
 		try {
+			// idzie do createTable() w JdbcFacade
+
 			Connection conn = instance.getConnection();
 			
 			Statement sta = conn.createStatement();
@@ -19,12 +21,16 @@ public class JdbcDemo {
 			
 			System.out.println("Table created.");
 			sta.close();
+
+			// idzie do insertIntoTable() w JdbcFacade
 			
 			sta = conn.createStatement();
 			count = sta.executeUpdate("INSERT INTO Address (ID, StreetName, City) "
 					+ "values (1, '1234 Some street', 'Layton')");
 			System.out.println(count + " record(s) created.");
 			sta.close();
+
+			// idzie do getAddresses() w JdbcFacade
 			
 			sta = conn.createStatement();
 			ResultSet rs = sta.executeQuery("SELECT * FROM Address");
@@ -38,3 +44,6 @@ public class JdbcDemo {
 		}
 	}
 }
+
+// przykład without facade
+// jest skomplikowany w użytkowaniu, można np. zapomnieć o zamykaniu połączeń
