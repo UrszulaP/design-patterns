@@ -26,7 +26,7 @@ public class FlyweightInventoryDemo {
 }
 
 // flyweight - pyłek
-// używany do optymalizacji, np. w Inventory Management System, sklepach - żeby nie tworzyć wielu obiektów
+// używany do optymalizacji RAM, np. w Inventory Management System, sklepach - żeby nie tworzyć wielu obiektów
 
 //▪ More efficient use of memory
 //▪ Large number of similar objects

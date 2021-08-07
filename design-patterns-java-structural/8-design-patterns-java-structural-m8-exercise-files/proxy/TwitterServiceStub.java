@@ -1,4 +1,4 @@
-package com.pluralsight.proxy;
+package proxy;
 
 public class TwitterServiceStub implements TwitterService {
 

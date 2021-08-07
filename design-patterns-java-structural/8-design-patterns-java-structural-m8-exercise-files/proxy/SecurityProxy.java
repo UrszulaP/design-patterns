@@ -1,4 +1,4 @@
-package com.pluralsight.proxy;
+package proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -21,7 +21,7 @@ public class SecurityProxy implements InvocationHandler {
 	public Object invoke(Object proxy, Method m, Object[] args) throws Throwable {
 	    Object result;
 	    try {
-	    		if(m.getName().contains("post")) {
+	    		if(m.getName().contains("post")) {  // nie pozwala wywołać metody postToTimeline() z TwitterServiceImpl, bazuje na nazwie metody - security proxy
 	    			throw new IllegalAccessException("Posts are currently not allowed");
 	    		}
 	    		else {

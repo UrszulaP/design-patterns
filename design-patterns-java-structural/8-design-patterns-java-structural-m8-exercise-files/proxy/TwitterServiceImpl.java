@@ -1,4 +1,4 @@
-package com.pluralsight.proxy;
+package proxy;
 
 import java.util.List;
 
@@ -12,16 +12,17 @@ import twitter4j.conf.ConfigurationBuilder;
 
 //https://gist.github.com/bh5k/73a82d64e35e780150d1
 
+// nie trzeba analizować, nie dotyczy wzorca, zamiast TwitterServiceStup - realword example
 public class TwitterServiceImpl implements TwitterService {
 
 	private static final String TWITTER_CONSUMER_KEY = "p6BBcuQ8iExdE1me7VUvDVIQY";
 	private static final String TWITTER_SECRET_KEY = "WYBf6Sz9CQ2MgKaPQxErWIASASf4KlHGraUoI29JJoZ6eZWaBC";
 	private static final String TWITTER_ACCESS_TOKEN = "15022283-85fcsL6kflLJIWJ074jQgv2C4COosDMENukPNpCF3";
 	private static final String TWITTER_ACCESS_TOKEN_SECRET = "j7fjGTnkqJZyldI5ZR8EYvZfIYgeBTtRC37ZpZjyDnIYG";
-	
+
 	@Override
 	public String getTimeline(String screenName) {
-		
+
 		ConfigurationBuilder cb = new ConfigurationBuilder();
 		cb.setDebugEnabled(true)
 		    .setOAuthConsumerKey(TWITTER_CONSUMER_KEY)
@@ -42,12 +43,12 @@ public class TwitterServiceImpl implements TwitterService {
 		            builder.append("\n");
 		        }
 		    } while ((query = result.nextQuery()) != null);
-		    
+
 		} catch (TwitterException te) {
 		    te.printStackTrace();
 		    System.out.println("Failed to search tweets: " + te.getMessage());
 		}
-		return builder.toString();	
+		return builder.toString();
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package com.pluralsight.proxy;
+package proxy;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ public class TwitterExample {
 	private static final String TWITTER_SECRET_KEY = "23V1G25UTDjeWZTNU3maGfeLrVigSPK6JnJHDIBNDRR5FC9cHS";
 	private static final String TWITTER_ACCESS_TOKEN = "15022283-LBY37j2wmYiqhtPNixqVJv0B84FZEroyxvmsjaywl";
 	private static final String TWITTER_ACCESS_TOKEN_SECRET = "bmclfpFMqKnmzoqztnSm41WxXalkW5K2tUdnXVxIAG1Es";
-	
+
 	public static void main (String args[]) {
-		
+
 		ConfigurationBuilder cb = new ConfigurationBuilder();
 		cb.setDebugEnabled(true)
 		    .setOAuthConsumerKey(TWITTER_CONSUMER_KEY)
@@ -44,5 +44,5 @@ public class TwitterExample {
 		    System.exit(-1);
 		}
 	}
-	
+
 }
