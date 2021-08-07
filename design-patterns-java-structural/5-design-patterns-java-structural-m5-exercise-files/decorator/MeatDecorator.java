@@ -1,13 +1,13 @@
-package com.pluralsight.decorator;
+package decorator;
 
-public class MeatDecorator extends SandwichDecorator {
+public class MeatDecorator extends SandwichDecorator {  // typ: concrete Decorator
 
 	public MeatDecorator(Sandwich customSandwich) {
 		super(customSandwich);
 	}
 
 	public String make() {
-		return customSandwich.make() + addMeat();
+		return customSandwich.make() + addMeat();  // added functionality
 	}
 
 	private String addMeat() {

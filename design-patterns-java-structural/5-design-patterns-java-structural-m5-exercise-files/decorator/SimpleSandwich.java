@@ -1,6 +1,6 @@
-package com.pluralsight.decorator;
+package decorator;
 
-public class SimpleSandwich implements Sandwich {
+public class SimpleSandwich implements Sandwich {  // typ: concrete Component
 
 	@Override
 	public String make() {

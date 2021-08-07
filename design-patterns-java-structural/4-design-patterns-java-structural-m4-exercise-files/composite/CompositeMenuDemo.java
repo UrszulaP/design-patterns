@@ -20,16 +20,16 @@ public class CompositeMenuDemo {
 	}
 }
 
-// 						Menu mainMenu
-//						/			\
-//	MenuItem safetyMenuItem			Menu claimsSubMenu
-//											\
-//										MenuItem personalClaimsMenu
+// 							Menu mainMenu (Component)
+//							/			\
+//	MenuItem safetyMenuItem	(Leaf)		Menu claimsSubMenu (Composite)
+//												\
+//											MenuItem personalClaimsMenu
 
 // rezultat: printuje nam wszystkie elementy po kolei
 // kolejność printowania: Main, Safety, Claim, Personal Claim
 
-// używany do tree structure (jak komponenty w Angularze)
+// używany do tree structure
 // traktuje wszystkie elementy tak samo (metoda toString()) - zarówno pojedyncze (MenuItem) jak i kompozyty (Menu)
 
 //▪ Components represent part or whole structure

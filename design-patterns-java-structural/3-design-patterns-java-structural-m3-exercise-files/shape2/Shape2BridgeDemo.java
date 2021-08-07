@@ -21,4 +21,4 @@ public class Shape2BridgeDemo {
 
 }
 
-// mamy 2 wymiary, można je rozszerzać/zmieniać niezależnie od siebie
+// mamy 2 wymiary (Color, Shape), można je rozszerzać/zmieniać niezależnie od siebie

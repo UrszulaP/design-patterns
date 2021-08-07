@@ -1,5 +1,5 @@
-package com.pluralsight.decorator;
+package decorator;
 
-public interface Sandwich {
+public interface Sandwich {  // typ: Component (może być abstrac class)
 	public String make();
 }
