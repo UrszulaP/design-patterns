@@ -1,5 +1,6 @@
-package com.pluralsight.flyweight;
+package flyweight;
 
+// nie dotyczy flyweight pattern
 public class Order {
 	private final int orderNumber;
 	private final Item item;

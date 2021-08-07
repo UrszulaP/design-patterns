@@ -1,4 +1,4 @@
-package com.pluralsight.flyweight;
+package flyweight;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
