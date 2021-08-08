@@ -94,7 +94,4 @@ class Address {  // może być oddzielną klasą
 	public void setCity(String city) {
 		this.city = city;
 	}
-
-
-
 }

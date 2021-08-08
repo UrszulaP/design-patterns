@@ -33,7 +33,8 @@ public class FlyweightInventoryDemo {
 //▪ Immutable
 //▪ Most of the object states can be extrinsic
 //▪ Examples:
-//	▪ java.lang.String
+//	▪ java.lang.String (String Pool)?
+//		Tworząc nowy String w przypadku powtórzenia danego ciągu znaków kompilator odwoła się do obiektów klasy String zawartych w puli – czego skutkiem będzie wyższa wydajność programu.
 //	▪ java.lang.Integer#valueOf(int)
 //	▪ Boolean, Byte, Character, Short, Long
 //
