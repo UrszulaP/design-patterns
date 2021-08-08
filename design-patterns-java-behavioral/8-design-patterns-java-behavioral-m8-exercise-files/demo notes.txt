@@ -1,7 +1,7 @@
 
 //Message Stream
 
-package com.pluralsight.observer;
+package observer;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -23,7 +23,7 @@ public class MessageStream extends Subject {
 
 //tablet client
 
-package com.pluralsight.observer;
+package observer;
 
 public class TabletClient extends Observer {
 

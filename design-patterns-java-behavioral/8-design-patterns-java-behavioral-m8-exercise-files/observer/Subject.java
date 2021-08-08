@@ -1,4 +1,4 @@
-package com.pluralsight.observer;
+package observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public abstract class Subject {
 	
 	public void notifyObservers() {
 		for (Observer observer : observers) {
-			observer.update();
+			observer.update();  // woła metodę update z klasy implementującej Observer
 		}
 	}
 }
