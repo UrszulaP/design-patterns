@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-creational/02/02.iml" filepath="$PROJECT_DIR$/design-patterns-java-creational/02/02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-creational/03/03.iml" filepath="$PROJECT_DIR$/design-patterns-java-creational/03/03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-creational/04/04.iml" filepath="$PROJECT_DIR$/design-patterns-java-creational/04/04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-creational/05/05.iml" filepath="$PROJECT_DIR$/design-patterns-java-creational/05/05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-creational/06/06.iml" filepath="$PROJECT_DIR$/design-patterns-java-creational/06/06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Wzorce_projektowe.iml" filepath="$PROJECT_DIR$/.idea/Wzorce_projektowe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-java-structural/design-patterns-java-structural.iml" filepath="$PROJECT_DIR$/design-patterns-java-structural/design-patterns-java-structural.iml" />
+    </modules>
+  </component>
+</project>
