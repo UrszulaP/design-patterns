@@ -1,4 +1,4 @@
-package com.pluralsight.command;
+package command;
 
 import java.util.List;
 

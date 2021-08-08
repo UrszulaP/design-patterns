@@ -1,4 +1,4 @@
-package com.pluralsight.command;
+package command;
 
 //receiver
 public class Light {

@@ -1,5 +1,3 @@
-package com.pluralsight.command;
-
 public class CommandEverydayDemo {
 
 	public static void main(String[] args) {
@@ -26,6 +24,6 @@ class Task implements Runnable {
 	
 	@Override
 	public void run() { //execute method
-		System.out.println(num1 * num2); //receiver
+		System.out.println(num1 * num2); //receiver - console
 	}
 }

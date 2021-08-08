@@ -1,4 +1,4 @@
-package com.pluralsight.command;
+package command;
 
 //concrete command
 public class OnCommand implements Command {
