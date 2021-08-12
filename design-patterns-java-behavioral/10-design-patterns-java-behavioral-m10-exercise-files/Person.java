@@ -1,5 +1,3 @@
-package com.pluralsight.strategy;
-
 public class Person {
 
 	private int age;

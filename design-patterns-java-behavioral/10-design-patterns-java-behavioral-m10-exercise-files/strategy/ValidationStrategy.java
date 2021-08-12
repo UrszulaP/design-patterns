@@ -1,10 +1,10 @@
-package com.pluralsight.strategy;
+package strategy;
 
-public abstract class ValidationStrategy {
+public abstract class ValidationStrategy {  // can be an interface but usually it's an abstract class
 
 	public abstract boolean isValid(CreditCard creditCard);
 
-	protected boolean passesLuhn(String ccNumber) {
+	protected boolean passesLuhn(String ccNumber) {  // algorytm nieistotny dla zrozumienia wzorca
 		int sum = 0;
 		boolean alternate = false;
 		for (int i = ccNumber.length() - 1; i >= 0; i--) {

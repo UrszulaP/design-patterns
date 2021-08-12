@@ -1,17 +1,17 @@
-package com.pluralsight.strategy;
+package strategy;
 
 public class CreditCard {
 
 	private String number;
 	private String date;
 	private String cvv;
-	private ValidationStrategy strategy;
+	private ValidationStrategy strategy;  // no getter nor setter for the strategy
 	
 	public CreditCard(ValidationStrategy strategy) {
 		this.strategy = strategy;
 	}
 	
-	public boolean isValid() {
+	public boolean isValid() {  // niekoniecznie w ten sposób
 		return strategy.isValid(this);
 	}
 
