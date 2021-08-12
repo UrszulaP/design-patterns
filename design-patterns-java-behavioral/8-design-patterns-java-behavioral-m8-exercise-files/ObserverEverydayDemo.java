@@ -8,10 +8,14 @@ public class ObserverEverydayDemo {
 		
 		Client client1 = new Client("Bryan");  // Observer
 		Client client2 = new Client("Mark");
-		
+
 		messageStream.addObserver(client1);
 		messageStream.addObserver(client2);
-		
+
+		messageStream.someoneTweeted();
+
+		Client client3 = new Client("Ula");
+		messageStream.addObserver(client3);
 		messageStream.someoneTweeted();
 	}
 }
