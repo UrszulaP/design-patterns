@@ -1,4 +1,4 @@
-package com.pluralsight.chain;
+package chain;
 
 public enum RequestType {
 	CONFERENCE, PURCHASE;
