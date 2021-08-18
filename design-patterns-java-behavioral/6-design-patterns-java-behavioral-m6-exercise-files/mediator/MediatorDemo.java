@@ -1,4 +1,4 @@
-package com.pluralsight.mediator;
+package mediator;
 
 public class MediatorDemo {
 
@@ -21,3 +21,21 @@ public class MediatorDemo {
 	}
 
 }
+
+// mediator allows classes to work independently, without having to communicate with each other
+
+//▪ Loose coupling
+//▪ Well-defined, but complex
+//▪ Reusable components
+//▪ Hub / Router
+//▪ Examples:
+//	▪ java.util.Timer
+//	▪ java.lang.reflect.Method#invoke()
+
+//Minimizes inheritance
+//Mediator knows about colleagues
+
+//• Loose coupling
+//• Simplified communication
+//• Mediator complexity
+//• Use with Command

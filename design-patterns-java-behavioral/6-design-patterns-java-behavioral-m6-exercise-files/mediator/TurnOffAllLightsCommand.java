@@ -1,4 +1,4 @@
-package com.pluralsight.mediator;
+package mediator;
 
 //concrete command
 public class TurnOffAllLightsCommand implements Command {
@@ -14,3 +14,5 @@ public class TurnOffAllLightsCommand implements Command {
 		med.turnOffAllLights();
 	}
 }
+
+// in command example it was taking list of Lights and implementing the all lights off method itself, now it just uses the mediator

@@ -1,9 +1,9 @@
-package com.pluralsight.mediator;
+package mediator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Mediator {
+public class Mediator { // can be an interface, abstract class (then needs another concrete class) or just a concrete class
 
 	private List<Light> lights = new ArrayList<>();
 	

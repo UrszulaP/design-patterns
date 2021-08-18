@@ -1,5 +1,3 @@
-package com.pluralsight.mediator;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
