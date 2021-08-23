@@ -1,5 +1,3 @@
-package com.pluralsight.interpreter;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,3 +14,7 @@ public class InterpreterEverydayDemo {
 		}
 	}
 }
+// Output:
+//Found a Lion.
+//Found a tiger.
+//Found a bear.

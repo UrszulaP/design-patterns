@@ -1,4 +1,4 @@
-package com.pluralsight.interpreter;
+package interpreter;
 
 import java.util.StringTokenizer;
 
@@ -11,7 +11,7 @@ public class TerminalExpression implements Expression {
 	}
 
 	public boolean interpret(String str) {
-		StringTokenizer st = new StringTokenizer(str);
+		StringTokenizer st = new StringTokenizer(str);  // default delimiter: " \t\n\r\f”
 		while (st.hasMoreTokens()) {
 			String test = st.nextToken();
 			if (test.equals(data)) {

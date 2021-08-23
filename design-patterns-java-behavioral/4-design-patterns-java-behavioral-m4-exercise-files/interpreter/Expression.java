@@ -1,5 +1,5 @@
-package com.pluralsight.interpreter;
+package interpreter;
 
-public interface Expression {
-	public boolean interpret(String context);
+public interface Expression {  // can be an abstract class
+	boolean interpret(String context);
 }
