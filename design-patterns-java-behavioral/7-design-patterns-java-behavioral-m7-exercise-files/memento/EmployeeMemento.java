@@ -1,9 +1,9 @@
-package com.pluralsight.memento;
+package memento;
 
 //memento
 public class EmployeeMemento {
 
-	private String name;
+	private String name;  // we can choose fields that we want to store (no address field)
 	private String phone;
 
 	public EmployeeMemento(String name, String phone) {
@@ -13,7 +13,7 @@ public class EmployeeMemento {
 
 	public String getName() {
 		return name;
-	}
+	} // no setters - we set through the constructor
 	
 	public String getPhone() {
 		return phone;

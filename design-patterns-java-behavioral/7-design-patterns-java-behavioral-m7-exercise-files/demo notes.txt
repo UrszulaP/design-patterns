@@ -1,7 +1,7 @@
-package com.pluralsight.memento;
+package memento;
 
 //originator
-public class Employee {
+public class memento.Employee {
 	
 	private String name;
 	private String address;

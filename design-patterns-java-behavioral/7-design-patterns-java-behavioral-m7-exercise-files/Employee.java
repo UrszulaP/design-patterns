@@ -1,7 +1,9 @@
-package memento;
+import memento.EmployeeMemento;
+
+import java.io.Serializable;
 
 //originator
-public class Employee {
+public class Employee implements Serializable {
 	
 	private String name;
 	private String address;
@@ -34,13 +36,5 @@ public class Employee {
 	public String toString() {
 		return name + " : " + phone;
 	}
-	
-	public EmployeeMemento save() {
-		return new EmployeeMemento(name, phone);
-	}
-	
-	public void revert(EmployeeMemento emp) {
-		this.name = emp.getName();
-		this.phone = emp.getPhone();
-	}
+
 }

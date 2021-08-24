@@ -1,5 +1,3 @@
-package com.pluralsight.memento;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -11,7 +9,7 @@ public class MementoEverydayDemo {
 	private static Employee deserialize() {
 		Employee emp = null;
 		try {
-			FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");
+			FileInputStream fileIn = new FileInputStream("./employee.ser");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
 			emp = (Employee) in.readObject();
 			in.close();
@@ -26,7 +24,7 @@ public class MementoEverydayDemo {
 	private static void serialize(Employee emp) {
 
 		try {
-			FileOutputStream fileOut = new FileOutputStream("/tmp/employee.ser");
+			FileOutputStream fileOut = new FileOutputStream("./employee.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			out.writeObject(emp);
 			out.close();
@@ -44,8 +42,11 @@ public class MementoEverydayDemo {
 
 		serialize(emp);
 
+		emp.setName("Ula");
+
 		Employee newEmp = deserialize();
 		
 		System.out.println(newEmp.getName());
+		System.out.println(emp.getName());
 	}
 }
