@@ -1,5 +1,3 @@
-package com.pluralsight.iterator;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -16,11 +14,11 @@ public class IteratorEverydayDemo {
 		
 		Iterator<String> namesItr = names.iterator();
 		
-		//for(int i = 0; i < names.size(); i++) {
+		//for(int i = 0; i < names.size(); i++) {  // this exposes the index, doesn't use Iterator; can't use it with Set, List only (Set has no index)
 		//	String name = names.get(i);
 		//}
 		
-		//for (String name : names) {
+		//for (String name : names) {  // this uses Iterator behind the scenes
 		//	System.out.println(name);
 		//}
 		

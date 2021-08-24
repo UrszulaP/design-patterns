@@ -1,4 +1,4 @@
-package com.pluralsight.iterator;
+package iterator;
 
 import java.util.Iterator;
 
@@ -34,7 +34,7 @@ public class BikeRepository implements Iterable<String> {
 			@Override
 			public boolean hasNext() {
 				return currentIndex < bikes.length && bikes[currentIndex] != null;
-			}
+			}  // array can be larger than used space in it
 
 			@Override
 			public String next() {
@@ -44,7 +44,7 @@ public class BikeRepository implements Iterable<String> {
 			@Override
 			public void remove() {
 				throw new UnsupportedOperationException();
-			}
+			}  // can be implemented
 			
 		};
 		
